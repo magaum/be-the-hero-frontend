@@ -31,7 +31,7 @@ export default function Register() {
             alert(`ONG cadastrada com sucesso ${response.data.id}`);
             history.push('/');
         } catch (err) {
-            alert(`Erro ao cadastrar ONG: ${err?.message ?? 'Tente novamente.'}`);
+            alert(`Erro ao cadastrar ONG: ${err?.response?.data?.mensagem ?? 'Tente novamente.'}`);
         }
     }
 

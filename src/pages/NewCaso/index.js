@@ -22,7 +22,7 @@ export default function NewCaso(){
 
             <form>
                 <input placeholder="Titulo do caso" />
-                <textarea placeholder="Descrição" />
+                <textarea placeholder="Descrição" maxLength="255" />
 
                 <input placeholder="Valor em reais" />
 
